@@ -49,8 +49,6 @@ ActiveRecord::Schema.define(version: 20171206164832) do
     t.integer "company_id"
     t.integer "user_id"
     t.integer "payment_type_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.index ["company_id"], name: "index_orders_on_company_id"
     t.index ["payment_type_id"], name: "index_orders_on_payment_type_id"
     t.index ["user_id"], name: "index_orders_on_user_id"
@@ -108,6 +106,7 @@ ActiveRecord::Schema.define(version: 20171206164832) do
     t.text "title"
     t.text "email"
     t.text "password_digest"
+    t.text "token"
     t.text "work_phone"
     t.text "mobile_phone"
     t.boolean "is_active"

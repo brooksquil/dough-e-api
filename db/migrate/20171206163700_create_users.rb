@@ -6,6 +6,7 @@ class CreateUsers < ActiveRecord::Migration[5.1]
       t.text :title      
       t.text :email
       t.text :password_digest
+      t.text :token
       t.text :work_phone
       t.text :mobile_phone
       t.boolean :is_active
