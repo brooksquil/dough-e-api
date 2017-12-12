@@ -49,8 +49,6 @@ ActiveRecord::Schema.define(version: 20171206164832) do
     t.integer "company_id"
     t.integer "user_id"
     t.integer "payment_type_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.index ["company_id"], name: "index_orders_on_company_id"
     t.index ["payment_type_id"], name: "index_orders_on_payment_type_id"
     t.index ["user_id"], name: "index_orders_on_user_id"
@@ -74,9 +72,8 @@ ActiveRecord::Schema.define(version: 20171206164832) do
   create_table "products", force: :cascade do |t|
     t.text "name"
     t.text "description"
-    t.text "image"
     t.float "price"
-    t.boolean "available"
+    t.boolean "is_active"
     t.integer "product_type_id"
     t.integer "quantity_type_id"
     t.integer "company_id"
