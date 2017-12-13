@@ -20,13 +20,13 @@ Company.create([{ company_name: 'Bar Mitzvah',  shipping_address: '123 8th Ave S
 #users Table
 ##############
 # 1
-User.create([{ first_name: 'Jill',  last_name: 'Jackson',  title: 'Wholesale Assistant', email: 'jill@provence.com',  work_phone: '615-555-5555',  mobile_phone: '615-555-5555',  is_active: true,  is_admin: true,  company_id: '1'}])
+User.create([{ first_name: 'Jill',  last_name: 'Jackson',  title: 'Wholesale Assistant', email: 'jill@provence.com', password_digest: '123456',  work_phone: '615-555-5555',  mobile_phone: '615-555-5555',  is_active: true,  is_admin: true,  company_id: '1'}])
 
 #2
-User.create([{ first_name: 'Jamie',  last_name: 'Baker', title: 'Sous Chef',  email: 'Jamie@email.com',  work_phone: '615-555-5555',  mobile_phone: '615-555-5555',  is_active: true,  is_admin: true,  company_id: '2'}])
+User.create([{ first_name: 'Jamie',  last_name: 'Baker', title: 'Sous Chef',  email: 'Jamie@email.com', password_digest: '123456', work_phone: '615-555-5555',  mobile_phone: '615-555-5555',  is_active: true,  is_admin: true,  company_id: '2'}])
 
 #3
-User.create([{ first_name: 'Kelsey',  last_name: 'Lee', title: 'Chef', email: 'kelsey@oy.com',  work_phone: '615-555-5555',  mobile_phone: '615-555-5555',  is_active: true,  is_admin: true,  company_id: '3'}])
+User.create([{ first_name: 'Kelsey',  last_name: 'Lee', title: 'Chef', email: 'kelsey@oy.com', password_digest: '123456',  work_phone: '615-555-5555',  mobile_phone: '615-555-5555',  is_active: true,  is_admin: true,  company_id: '3'}])
 
 #####################
 # payment_type Table
